@@ -30,9 +30,8 @@ class Scropper {
         //get path using url variable
         $this->imgName = ($_GET['img'] != null) ? $_GET['img'] : null;
         
-        //$path = "http://cdn.yourdailydish.com/images/".$this->imgName;
-        
-        $path = "http://www.hereswhat.org/wp-content/uploads/2015/05/HWST_Ambrosio2.jpg";
+        $path = "path/to/your/images".$this->imgName;
+                
         
         //store imagick object into class variable
         $this->image = new Imagick($path);       
